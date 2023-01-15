@@ -33,9 +33,7 @@ function generateRandomNumber(num) {
     }
   }
   
-  function formatHorrid(wisdom) {
-    // Add some ASCII here?
-    // Add in more symbols to the array? like emojies or what not?
+  function formatHorrid(wisdom) { 
     const formatted = funnysentence.join('\n')
     console.log(formatted)
   }

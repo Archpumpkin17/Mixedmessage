@@ -20,13 +20,13 @@ function generateRandomNumber(num) {
     // use the object's properties to customize the message being added to personalWisdom  
     switch(prop) {
       case 'words':
-        funnysentence.push(`Today I saw that "${collectiveWisdom[prop][optionIdx]}".`)
+        funnysentence.push(`Today I saw that ${funny[prop][optionIdx]} `)
         break
       case 'words2':
-        funnysentence.push({collectiveWisdom[prop][optionIdx]})
+        funnysentence.push(funny[prop][optionIdx])
         break
       case 'words3':
-        funnysentence.push(`, How horrid "${collectiveWisdom[prop][optionIdx]}".`)
+        funnysentence.push(` ${funny[prop][optionIdx]}, how horrid .`)
         break
       default:
         personalWisdom.push("I didn't see anything.")
@@ -34,8 +34,8 @@ function generateRandomNumber(num) {
   }
   
   function formatHorrid(wisdom) { 
-    const formatted = funnysentence.join('\n')
+    const formatted = funnysentence.join('')
     console.log(formatted)
+    document.write(formatted)
   }
-  
-  formatWisdom(funnysentence);
+  formatHorrid(funnysentence)
